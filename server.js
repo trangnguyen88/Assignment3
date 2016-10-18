@@ -7,7 +7,8 @@ app.use(express.static(__dirname + '/client'));
 
 app.use(parser.json());
 app.use(parser.urlencoded({extened: true}));
-http.createServer(app).listen(4000);
+http.createServer(app).listen(3000);
+console.log('server is listening on port 3000');
 
 app.post("/average",
   function(req,res){
